@@ -1,5 +1,6 @@
 reload "user.emmet-ls"
 reload "user.dap-js"
+-- reload "user.tsserver"
 
 lvim.builtin.which_key.mappings["t"] = {
   name = "+Terminal",
@@ -172,5 +173,4 @@ lvim.builtin.project.active = false
 lvim.keys.normal_mode["gt"] = ":BufferLineCycleNext<CR>"
 lvim.keys.normal_mode["gT"] = ":BufferLineCyclePrev<CR>"
 lvim.keys.normal_mode['gu'] = ":lua vim.lsp.buf.references()<CR>"
-
 require('telescope').load_extension('bookmarks')
